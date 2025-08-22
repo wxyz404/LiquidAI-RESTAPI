@@ -10,7 +10,7 @@ from threading import Lock
 import time
 
 # --- Config (edit model path as needed) ---
-MODEL_GGUF_FILE = "C:/Users/xming/PycharmProjects/RestAPI/LFM2-1.2B-Q4_0.gguf"
+MODEL_GGUF_FILE = ""
 SYSTEM_PROMPT = "You're a helpful assistant. Be concise and accurate."
 LOG_FILE = "llamacpp.log"
 MAX_HISTORY_MESSAGES = 10   # avoid unbounded growth
@@ -131,3 +131,4 @@ def health():
             "active_sessions": len(session_models),
             "sessions": list(session_models.keys())
         }
+
