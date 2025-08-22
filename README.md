@@ -1,0 +1,2 @@
+# LiquidAI-RESTAPI
+REST API for Liquid AI LFM2-1.2B
