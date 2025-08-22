@@ -9,7 +9,7 @@ from starlette.concurrency import run_in_threadpool
 from threading import Lock
 
 # --- Config (edit model path as needed) ---
-MODEL_GGUF_FILE = "C:/Users/xming/PycharmProjects/RestAPI/LFM2-1.2B-Q4_0.gguf"
+MODEL_GGUF_FILE = ""
 SYSTEM_PROMPT = "You're are helpful assistant. Be concise and accurate."
 LOG_FILE = "llamacpp.log"
 # ------------------------------------------
@@ -123,3 +123,4 @@ async def generate(
 @app.get("/health")
 def health():
     return {"ok": True, "model_loaded": llm is not None}
+
